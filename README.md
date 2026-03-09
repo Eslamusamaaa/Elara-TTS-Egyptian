@@ -13,9 +13,13 @@ The foundation of Elara-TTS is a meticulously curated 14-hour dataset of natural
 2. Intelligent Segmentation: Using `faster-whisper` (large-v3), the audio was transcribed and sliced. A Voice Activity Detection (VAD) filter was crucial here to trim extended silences (min_silence_duration_ms=500) and prevent the model from learning "dead air".
 3. Duration Constraints: To ensure stable attention mechanisms during training, audio chunks were strictly filtered to be between 1.5 and 15.0 seconds. 
 4. Metadata Generation: A pipe-separated (`|`) CSV format was chosen over standard commas to completely avoid tokenization conflicts with Arabic text punctuation.
+<img width="649" height="675" alt="Screenshot 2026-03-09 085448" src="https://github.com/user-attachments/assets/4bc47aa2-69b5-4578-b78e-f4314c5df76e" />
+<img width="700" height="692" alt="Screenshot 2026-03-09 085352" src="https://github.com/user-attachments/assets/2251ed69-223e-4a7e-9d0c-d77446b2974a" />
+
 
 ### Stage 2: The Egyptian Linguistic Normalization Engine
-TTS models synthesize exactly what they read. Since the Egyptian dialect contains heavy use of numbers, symbols, and foreign currencies that are spoken differently than written, a custom NLP normalization engine was developed:
+TTS mo![Uploading Screenshot 2026-03-09 085352.png…]()
+dels synthesize exactly what they read. Since the Egyptian dialect contains heavy use of numbers, symbols, and foreign currencies that are spoken differently than written, a custom NLP normalization engine was developed:
 
 1. Number Expansion (Grapheme-to-Phoneme adaptation): Digits were programmatically expanded into their Egyptian spoken equivalents based on complex scaling rules (e.g., converting "15" to "خمستاشر" and "200" to "ميتين").
 2. Contextual Currency Pluralization: The engine identifies currencies (EGP, USD, EUR) and applies accurate Arabic pluralization logic based on the preceding number (singular, dual, or plural forms, such as "جنيه", "جنيهين", "قروش").
