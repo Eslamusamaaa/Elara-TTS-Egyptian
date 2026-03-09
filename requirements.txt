@@ -1,0 +1,53 @@
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+build/
+dist/
+
+# --- Jupyter / Colab Artifacts ---
+.ipynb_checkpoints
+temp_resume.wav
+
+# --- Project Specific Data (Based on your scripts) ---
+# Raw audio directories
+/yourData/
+/allAudio/
+/elespitalia_dataset/
+
+# Processed dataset output
+/AUDIO_dataset_After_TRANS/
+/wavs/
+metadata.csv
+
+# State management files
+resume_state.json
+processed_files.txt
+
+# --- Model Weights & Outputs ---
+# Local Spark model files
+/Spark-TTS-0.5B/
+
+# Training checkpoints and logs
+/spark-tts-normazlied-da7ee7-8k-lm-egy/
+/outputs/
+/runs/
+checkpoint-*/
+wandb/
+
+# Large file formats
+*.wav
+*.mp3
+*.mp4
+*.pth
+*.bin
+*.safetensors
+*.tar.gz
+*.zip
+
+# --- OS Artifacts ---
+.DS_Store
+Thumbs.db
