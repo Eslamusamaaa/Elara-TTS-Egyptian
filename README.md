@@ -18,8 +18,7 @@ The foundation of Elara-TTS is a meticulously curated 14-hour dataset of natural
 
 
 ### Stage 2: The Egyptian Linguistic Normalization Engine
-TTS mo![Uploading Screenshot 2026-03-09 085352.png…]()
-dels synthesize exactly what they read. Since the Egyptian dialect contains heavy use of numbers, symbols, and foreign currencies that are spoken differently than written, a custom NLP normalization engine was developed:
+TTS models synthesize exactly what they read. Since the Egyptian dialect contains heavy use of numbers, symbols, and foreign currencies that are spoken differently than written, a custom NLP normalization engine was developed:
 
 1. Number Expansion (Grapheme-to-Phoneme adaptation): Digits were programmatically expanded into their Egyptian spoken equivalents based on complex scaling rules (e.g., converting "15" to "خمستاشر" and "200" to "ميتين").
 2. Contextual Currency Pluralization: The engine identifies currencies (EGP, USD, EUR) and applies accurate Arabic pluralization logic based on the preceding number (singular, dual, or plural forms, such as "جنيه", "جنيهين", "قروش").
