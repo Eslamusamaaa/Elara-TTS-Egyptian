@@ -1,4 +1,5 @@
 # Elara-TTS: Egyptian Arabic Speech Synthesis Engine
+Linkedin: https://www.linkedin.com/posts/eslam-osama-b30a4631b_machinelearning-nlp-texttospeech-ugcPost-7439014881602871296-RpCg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEiWtQB4c23Dec2o9xJJCjYnNN0dpG_yTE
 
 Elara-TTS represents the core text-to-speech engine developed for the Elara educational platform. This project outlines the complete methodology and engineering process required to adapt the Spark-TTS (0.5B) architecture to fully grasp and generate the Egyptian Arabic dialect with high fidelity and natural intonation.
 
